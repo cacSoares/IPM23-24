@@ -82,35 +82,7 @@
         <p style="font-size: 30px; margin-bottom: 30px;"><u><strong>Assignments</strong></u></p>
 
 
-        <div class="tab" style="margin-left: 80px;">
-            <button class="tablinks" onclick="openAssignmentList('Carlos Soares')">Carlos Soares</button>
-            <button class="tablinks" onclick="openAssignmentList('Rodrigo Mota')">Rodrigo Mota</button>
-            <button class="tablinks" onclick="openAssignmentList('João Santos')">João Santos</button>
-            <button class="tablinks" onclick="openAssignmentList('João Pereira')">João Pereira</button>
-        </div>
-    
-        <script>
-            function openAssignmentList(elementName) {
-                const assignments = {
-                    "Carlos Soares": [
-                        { name: "Trabalho 1", url: "???" },
-                    ],
-                    "Rodrigo Mota": [
-                        { name: "Trabalho 1", url: "??" },
-                    ],
-                    "João Santos": [
-                        { name: "Trabalho 1", url: "???" },
-                    ],
-                    "João Pereira": [
-                        { name: "Trabalho 1", url: "???" },
-                    ]
-                };
-    
-                const assignmentList = assignments[elementName].map(assignment => `<a href="${assignment.url}" download>${assignment.name}</a>`).join('<br>');
-                const newTab = window.open('', '_blank');
-                newTab.document.write(`<div>${assignmentList}</div>`);
-            }
-        </script>
+        
           
         
     </body>
